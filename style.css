@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+
+body {
+    max-width: 100%;
+    background-color: #343a40;
+    color: #ccc;
+}
+
+a {
+    color: #ccc !important;
+}
+
+nav a {
+    font-size: 22px;
+}
+
+nav a.navbar-brand {
+    font-size: 32px;
+}
+
+nav #navbarNav {
+    margin-left: 20px;
+}
+
+nav #navbarNav .form-inline .fa-search {
+    color: white;
+}
+
+section {
+    margin-top: 35px;
+}
+
+section .card {
+    background: none;
+}
+
+section .card h5 a {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .recent {
+        margin-left: 20px;
+    }
+
+    .recent .card {
+        margin-right: -150px;
+    }
+
+    .recent .card img {
+        width: 100px !important;
+        height: 150px !important;
+    }
+}

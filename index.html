@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieLur</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="max-width: 100% ;">
+    <header>
+        <my-navbar></my-navbar>
+    </header>
+    <div id="main" style="max-width: 100%;">
+        <most-popular></most-popular>
+        <list-movies data="popular"
+            api="https://api.themoviedb.org/3/movie/popular?api_key=5098a9e3ca4920eb139726beda7dbdf6">
+        </list-movies>
+        <list-movies data="upcoming"
+            api="https://api.themoviedb.org/3/movie/upcoming?api_key=5098a9e3ca4920eb139726beda7dbdf6">
+        </list-movies>
+        <list-movies data="now_playing"
+            api="https://api.themoviedb.org/3/movie/now_playing?api_key=5098a9e3ca4920eb139726beda7dbdf6">
+        </list-movies>
+        <list-movies data="trending"
+            api=" https://api.themoviedb.org/3/trending/all/day?api_key=5098a9e3ca4920eb139726beda7dbdf6">
+        </list-movies>
+    </div>
+    <div id="movies">
+    </div>
+
+
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+    </script>
+
+    <script src="./component/index.js" type="module"></script>
+</body>
+
+</html>
